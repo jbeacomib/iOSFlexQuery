@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionViewController" customModule="FlexQuery" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="IGm-uP-jnG" id="dRO-Et-75h"/>
+                <outlet property="view" destination="iN0-l3-epB" id="K0q-Z3-X32"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-uP-jnG">
+                    <rect key="frame" x="0.0" y="80" width="414" height="832"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewLayout key="collectionViewLayout" id="FQE-rR-b0n" customClass="CustomCollectionViewLayout" customModule="FlexQuery" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nvK-Oa-WDw"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="gGN-MJ-oT3"/>
+                    </connections>
+                </collectionView>
+                <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUY-nV-0BO">
+                    <rect key="frame" x="0.0" y="36" width="414" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.49177968502044678" green="0.84127235412597656" blue="0.15414847433567047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Positions from last business day" id="6rm-jF-nzk"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.49658589853003732" green="0.86006560773480667" blue="0.15115732096539047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rUY-nV-0BO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JUy-eT-jK3"/>
+                <constraint firstAttribute="trailing" secondItem="rUY-nV-0BO" secondAttribute="trailing" id="VMr-dp-180"/>
+                <constraint firstItem="IGm-uP-jnG" firstAttribute="top" secondItem="rUY-nV-0BO" secondAttribute="bottom" id="bQz-iq-Sea"/>
+                <constraint firstItem="IGm-uP-jnG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cIa-sB-BXb"/>
+                <constraint firstAttribute="bottom" secondItem="IGm-uP-jnG" secondAttribute="bottom" id="kx6-Qr-W5m"/>
+                <constraint firstAttribute="trailing" secondItem="IGm-uP-jnG" secondAttribute="trailing" id="ts2-SS-Esr"/>
+                <constraint firstItem="rUY-nV-0BO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="vlp-9W-EUs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="472.46376811594206" y="338.16964285714283"/>
+        </view>
+    </objects>
+</document>
